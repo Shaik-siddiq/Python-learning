@@ -80,7 +80,7 @@ class User(BaseModel):
     name: str
     is_active: bool
 
-input_data = {'id':'shit', 'name':'siddiq', 'is_active':True }
+input_data = {'id':'123', 'name':'siddiq', 'is_active':True } # if given int then in input_data given integer in string format then it will convert it to integer 123
 
 user = User(**input_data) # ** is used to unpack the dictionary
 print(user)
